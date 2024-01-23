@@ -14,4 +14,7 @@ print("The word is", word)
 number_of_remove_characters = int(input("Enter how many first characters you want to remove in your word: "))
 print("Number of the first characters you want to remove in your word:", number_of_remove_characters)
 
+length_of_the_word = len(word)
 
+for i in range(number_of_remove_characters, length_of_the_word, 1):
+    print("\033[1;32;40m",word[i])
